@@ -53,6 +53,15 @@ for finding in findings:
     print(finding)
 ```
 
+## Development
+
+This project uses a src-based package layout. Install the package in editable mode so tests and `python -m envsan.cli` can import it.
+
+```bash
+python -m pip install -e .[dev]
+python -m pytest tests -q
+```
+
 ## Project structure
 
 ```
