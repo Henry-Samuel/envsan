@@ -2,6 +2,8 @@
 
 Audit environment variables for secrets, unsafe values, and policy violations.
 
+Source: https://github.com/Henry-Samuel/envsan
+
 ## About
 
 `envsan` scans local environment variables and reports sensitive names, unusually long values, and policy issues in a readable CLI or JSON format. It is designed for local debugging, container audits, and CI environment hardening.
@@ -20,11 +22,7 @@ Audit environment variables for secrets, unsafe values, and policy violations.
 python -m pip install envsan
 ```
 
-Or try it directly from source:
-
-```bash
-python -m envsan.cli
-```
+Requires Python 3.9+.
 
 ## Usage
 
