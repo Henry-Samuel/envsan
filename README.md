@@ -29,7 +29,7 @@ Requires Python 3.9+.
 ### Basic scan
 
 ```bash
-python -m envsan.cli
+python -m envsan
 ```
 
 Exit code is nonzero when there are `MEDIUM` or higher findings.
@@ -37,7 +37,7 @@ Exit code is nonzero when there are `MEDIUM` or higher findings.
 ### JSON output
 
 ```bash
-python -m envsan.cli --json
+python -m envsan --json
 ```
 
 ### Programmatic
