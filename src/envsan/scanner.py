@@ -10,9 +10,7 @@ _DEFAULT_EXCLUDE = {"PATH", "PWD", "OLDPWD", "HOME", "USER", "SHELL", "TERM"}
 
 
 def _looks_like_value_secret(value: str) -> bool:
-    if len(value) >= 20:
-        return True
-    return False
+    return len(value) >= 20
 
 
 def scan_environment(

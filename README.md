@@ -58,6 +58,7 @@ This project uses a src-based package layout. Install the package in editable mo
 ```bash
 python -m pip install -e .[dev]
 python -m pytest tests -q
+python -m envsan --help
 ```
 
 ## Project structure

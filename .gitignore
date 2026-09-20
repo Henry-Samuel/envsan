@@ -9,6 +9,9 @@ dist/
 build/
 *.whl
 .env
-node_modules
+.env.local
+*.log
+tmp/
+out/
 .cache/
 .DS_Store
