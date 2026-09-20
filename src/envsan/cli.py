@@ -24,6 +24,15 @@ def _render(finding: Finding) -> str:
 
 
 def run(argv: List[str]) -> int:
+    if "-h" in argv or "--help" in argv:
+        print("usage: envsan [-h] [--json]")
+        print()
+        print("Audit environment variables for secrets, unsafe values, and policy violations.")
+        print()
+        print("options:")
+        print("  -h, --help   show this help message")
+        print("  --json       output findings as JSON")
+        return 0
     as_json = "--json" in argv
     policy = EnvironmentPolicy()
     findings = scan_environment(env=dict(os.environ), policy=policy)
